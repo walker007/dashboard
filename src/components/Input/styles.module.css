@@ -1,0 +1,11 @@
+.input{
+    border-radius: 7px;
+    border: none;
+    padding: 4px;
+}
+
+.messageError{
+    color: #ff6161;
+    font-size: 10px;
+    font-weight: 700;
+}
