@@ -23,6 +23,8 @@ const schema = yup.object().shape({
       message: "Informe ao menos um sobrenome",
     })
     .transform((valorAtual) => {
+      if(valorAtual.length == 0) return;
+      
       const arrayNome = valorAtual.split(" ");
       return arrayNome
         .map((nomeMinusculo: string) => {
